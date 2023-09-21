@@ -2,10 +2,13 @@
 #include<string>
 using namespace std;
 
-void concatremove ()
+void concatremove (string s, string t, int k)
 {
-  
+    if (k >= t.length() + s.length())
+        cout << endl << "Yes";
 
+    if (t.length() == s.length() && k < t.length() + s.length())
+        cout << endl << "No";
 }
 
 int main()
@@ -20,6 +23,6 @@ int main()
     cout << endl << "Type k: ";
     cin >> k;
 
-    concatremove();
+    concatremove(s,t,k);
 
 }
