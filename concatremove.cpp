@@ -6,10 +6,6 @@ using namespace std;
 
 void concatremove (string s, string t, int k)
 {
-
-    cout << endl << "s: " << s.length();
-    cout << endl << "t: " << t.length();
-
     if (k >= t.length() + s.length())
         {
             cout << endl << "Yes";
